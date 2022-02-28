@@ -8,10 +8,7 @@ function displayDiv(id, elementValue) {
     }
 }
 
+// WHEN CLICKED GOES TO REGISTER.PHP
 document.getElementById("r_button").onclick = function () {
     location.href = "register.php";
 };
-
-// document.getElementById("r_submit").onclick = function () {
-//     location.href = "index.php";
-// };

@@ -6,6 +6,7 @@ include_once('User.php');
 
 $user = new User();
 
+// Validates login
 if(isset($_POST['login'])){
 	$username = $user->escape_string($_POST['username']);
 	$password = $user->escape_string($_POST['password']);

@@ -14,21 +14,20 @@ $sql = "SELECT * FROM userdb WHERE id = '".$_SESSION['user']."'";
 $row = $user->details($sql);
 
 ?>
+
+<!-- HOME.PHP HTML -->
 <!DOCTYPE html>
 <html>
 <head>
-	<title>PHP Login using OOP Approach</title>
+	<title>form</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <div class="container">
-	<h1 class="page-header text-center">PHP Login using OOP Approach</h1>
+	<h1 class="page-header text-center"></h1>
 	<div class="row">
 		<div class="col-md-4 col-md-offset-4">
-			<h2>Welcome to Homepage </h2>
-			<h4>User Info: </h4>
-			<p>Name: <?php echo $row['uname']; ?></p>
-			<p>Username: <?php echo $row['username']; ?></p>
+			<h2>Para volver al incio click en el boton "logout" </h2>
 			<a href="logout.php" class="btn btn-danger"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
 		</div>
 	</div>

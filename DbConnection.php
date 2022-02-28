@@ -1,3 +1,5 @@
+<!-- THIS CODE SETS THE CONNECTION TO THE DATABASE -->
+
 <?php
 class DbConnection{
 

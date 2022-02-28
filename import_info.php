@@ -38,15 +38,16 @@ $rs = mysqli_query($con,$sql2);
 </head>
 <body>
 
-    <div class="card card-header text-center card bg-primary text-white"> <h1>Gracias por completar el formulario <?php echo " " ?> </h1> </div>
+    <div class="card card-header text-center card bg-primary text-white"> <h1>Gracias por completar el formulario</h1> </div>
 
     <div class="card card-body">
         <h3>Acontinuación podrá ver la lista de sus datos enviados</h3>
-        <p>Feedback/Puntuacion:<?php echo ' ', $ufeedback?></p>
-        <p>Recomendación:<?php echo ' ', $urecomendacion?></p>
+        <p>Feedback/Puntuacion:<?php echo ' ', $ufeedback?></p> <!-- Uses input value to print "$ufeedback" -->
+        <p>Recomendación:<?php echo ' ', $urecomendacion?></p> <!-- Uses input value to print "$urecomendacion" -->
         <a href="logout.php" class="btn btn-danger col-md-1"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
     </div>
     <script type="text/javascript" src="utility.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    
 </body>
 </html>
